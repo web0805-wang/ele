@@ -24,15 +24,15 @@
         </p>
         <van-icon name="arrow" />
       </div>
-      <ul>
-        <router-link to="/goods" tag="li">商品</router-link>
-        <router-link to="/rating" tag="li">评价</router-link>
-        <router-link to="/seller" tag="li">商家</router-link>
-      </ul>
+      <div class="nav-con">
+        <ul>
+          <router-link to="/goods" tag="li">商品</router-link>
+          <router-link to="/rating" tag="li">评价</router-link>
+          <router-link to="/seller" tag="li">商家</router-link>
+        </ul>
+      </div>
     </div>
-    <div class="content">
-
-    </div>
+    <div class="content"></div>
   </div>
 </template>
 
@@ -71,7 +71,10 @@ export default {
   width: 100%;
   height: 2.65rem;
   background: #716860;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 .h-top {
   display: flex;
@@ -176,23 +179,28 @@ export default {
     color: #fff;
   }
 }
-ul {
-  margin: 0.8rem 1rem 0 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 5.5rem;
-  height: 0.8rem;
-  background: #f5cbcb;
-  li {
-    font-size: 0.28rem;
-    color: #858c91;
-  }
-  .active {
-    color: #f01414;
+.nav-con {
+    width:100%;
+     height: 0.8rem;
+     background:#fff;
+  ul {
+    margin: 0.8rem 1rem 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 5.5rem;
+    height: 0.8rem;
+    li {
+      font-size: 0.28rem;
+      color: #858c91;
+    }
+    .active {
+      color: #f01414;
+    }
   }
 }
-.content{
-    margin-top:0.8rem;
+
+.content {
+  margin-top: 3.45rem;
 }
 </style>

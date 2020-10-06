@@ -19,6 +19,8 @@ export default {
 
 <style >
 .content{
-  margin-top:0.8rem;
+  margin-top:3.45rem;
+  overflow-y: auto;
+  z-index:-1;
 }
 </style>
