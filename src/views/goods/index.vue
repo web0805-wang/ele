@@ -41,6 +41,104 @@
           </div>
         </div>
       </div>
+      <div class="box">
+        <p class="title">
+          <i>精彩单人套餐</i>
+        </p>
+        <div class="main">
+          <img src="../../assets/p2.jpg" alt="" />
+          <div class="text">
+            <p class="t-title">vc无限果汁</p>
+            <!-- <p class="t-describe">
+              红枣山药粥红枣山药粥红枣山药粥红枣山药粥红枣山药粥红枣山药粥红枣山药粥
+            </p> -->
+            <p class="t-sell">
+              <i>月售17</i>
+              <i>好评率100%</i>
+            </p>
+            <div class="t-bottom">
+              <i class="t-price">￥29</i>
+              <i class="t-old">￥36</i>
+              <p>
+                <span class="iconfont icon-jiabeifen"></span>
+                <i>1</i>
+                <span class="iconfont icon-jia"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <p class="title">
+          <i>冰爽饮品限时特惠</i>
+        </p>
+        <div class="main">
+          <img src="../../assets/p2.jpg" alt="" />
+          <div class="text">
+            <p class="t-title">vc无限果汁</p>
+            <!-- <p class="t-describe">
+              红枣山药粥红枣山药粥红枣山药粥红枣山药粥红枣山药粥红枣山药粥红枣山药粥
+            </p> -->
+            <p class="t-sell">
+              <i>月售17</i>
+              <i>好评率100%</i>
+            </p>
+            <div class="t-bottom">
+              <i class="t-price">￥29</i>
+              <i class="t-old">￥36</i>
+              <p>
+                <span class="iconfont icon-jiabeifen"></span>
+                <i>1</i>
+                <span class="iconfont icon-jia"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="main">
+          <img src="../../assets/p2.jpg" alt="" />
+          <div class="text">
+            <p class="t-title">vc无限果汁</p>
+            <!-- <p class="t-describe">
+              红枣山药粥红枣山药粥红枣山药粥红枣山药粥红枣山药粥红枣山药粥红枣山药粥
+            </p> -->
+            <p class="t-sell">
+              <i>月售17</i>
+              <i>好评率100%</i>
+            </p>
+            <div class="t-bottom">
+              <i class="t-price">￥29</i>
+              <i class="t-old">￥36</i>
+              <p>
+                <span class="iconfont icon-jiabeifen"></span>
+                <i>1</i>
+                <span class="iconfont icon-jia"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="main">
+          <img src="../../assets/p2.jpg" alt="" />
+          <div class="text">
+            <p class="t-title">vc无限果汁</p>
+            <!-- <p class="t-describe">
+              红枣山药粥红枣山药粥红枣山药粥红枣山药粥红枣山药粥红枣山药粥红枣山药粥
+            </p> -->
+            <p class="t-sell">
+              <i>月售17</i>
+              <i>好评率100%</i>
+            </p>
+            <div class="t-bottom">
+              <i class="t-price">￥29</i>
+              <i class="t-old">￥36</i>
+              <p>
+                <span class="iconfont icon-jiabeifen"></span>
+                <i>1</i>
+                <span class="iconfont icon-jia"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="footer">
       <div class="f-left">
@@ -97,7 +195,7 @@ export default {
     z-index: -1;
   }
   .right {
-    width: 5.91rem;
+    width: 5.8rem;
     position: absolute;
     top: 0;
     left: 1.6rem;
@@ -156,6 +254,7 @@ export default {
               margin-left: 0.27rem;
             }
             p {
+                margin-left: 1rem;
               display: flex;
               height: 0.4rem;
               align-items: center;
@@ -166,6 +265,10 @@ export default {
               .icon-jia {
                 font-size: 0.4rem;
                 color:#00a0dc;
+              }
+              i{
+                margin-left:0.2rem;
+                margin-right: 0.2rem;
               }
             }
           }
