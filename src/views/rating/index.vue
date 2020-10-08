@@ -76,11 +76,10 @@
             <p>南瓜粥</p>
             <p>皮蛋瘦肉粥</p>
             <p>扁豆焖面</p>
-            
           </div>
         </div>
       </div>
-       <div class="m-con">
+      <div class="m-con">
         <div class="box">
           <div class="b-title">
             <img src="../../assets/p3.jpg" alt="" />
@@ -100,9 +99,7 @@
               <i>21:52</i>
             </div>
           </div>
-          <div class="b-text">
-            不错，粥很好喝不错，粥很好喝不错
-          </div>
+          <div class="b-text">不错，粥很好喝不错，粥很好喝不错</div>
         </div>
       </div>
     </div>
@@ -112,7 +109,8 @@
 <script>
 //这里可以导入其他文件（比如：组件，工具js，第三方插件js，json文件，图片文件等等）
 //例如：import 《组件名称》 from '《组件路径》';
-
+import BScroll from "better-scroll"; // 导入滚动类库
+import ratingsData from '../../common/ratings';
 export default {
   //import引入的组件需要注入到对象中才能使用
   components: {},
@@ -120,6 +118,7 @@ export default {
     //这里存放数据
     return {
       value: 3,
+      ratings: [], // 存放评价数据
     };
   },
   //监听属性 类似于data概念
@@ -129,7 +128,15 @@ export default {
   //方法集合
   methods: {},
   //生命周期 - 创建完成（可以访问当前this实例）
-  created() {},
+  created() {
+    this.ratings = ratingsData;
+    console.log(this.ratings)
+    this.$nextTick(() => {
+      this.scroll = new BScroll(this.$refs.ratings, {
+        click: true,
+      });
+    });
+  },
   //生命周期 - 挂载完成（可以访问DOM元素）
   mounted() {},
   beforeCreate() {}, //生命周期 - 创建之前
@@ -143,6 +150,8 @@ export default {
 </script>
 <style lang='scss' scoped>
 .rating {
+  height: 10.68rem;
+  overflow: hidden;
   background: #f3f5f7;
   .pingfen {
     height: 2.35rem;
